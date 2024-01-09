@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Today</label>
+    <input type="text" id="number" onkeyup="thungay()">
+    <p> Display: <span id ="demo"></span></p>
+    <script>
+        function thungay(){
+            var a = parseInt(document.getElementById('number').value);
+            var Thu
+            if (a==1){
+                Thu = "Chu nhat";
+            }else if(a==2){
+                Thu = "Thu 2";
+            }else if(a==3){
+                Thu = "Thu 3";
+            }else if(a==4){
+                Thu = "Thu 4";
+            }else if(a==5){
+                Thu = "Thu 5";
+            }else if(a==6){
+                Thu = "Thu 6";
+            }else if(a==7){
+                Thu = "Thu 7";
+            }else{
+                Thu = "Nhap tu 1 den 7"
+            }
+            document.getElementById('demo').innerHTML =Thu;
+        }
+    </script>
+</body>
+</html>
